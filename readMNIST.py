@@ -57,7 +57,7 @@ def get_labeled_data(imageFile, labelFile):
 # call the function and show the image/labels
 images, labels = get_labeled_data('train-images-idx3-ubyte.gz', 'train-labels-idx1-ubyte.gz')
 
-label = "label: " + str(labels)
+label = "label: " + str(labels[0])
 plt.xlabel(label)
-plt.imshow(images, cmap=cm.binary)
-#plt.show()
+plt.imshow(images[0], cmap=cm.binary)
+plt.show()
